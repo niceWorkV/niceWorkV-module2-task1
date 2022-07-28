@@ -1,0 +1,57 @@
+body > h1 {
+  text-align: center;
+}
+
+div {
+  margin: 0px 0px 4px 0px;
+  padding: 0px 4px 0px 0px;
+
+  box-sizing: border-box;
+  width: 33%;
+
+  float: left;
+}
+
+section {
+  border: 1px solid #000;
+
+  padding: 0px 0px 0px 6px;
+  box-sizing: border-box;
+
+  background: gray;
+}
+
+section > h1 {
+  margin: -1px -1px 0px 0px;
+  border: 1px solid #000;
+  width: 35%;
+
+  text-align: center;
+  background-color:  pink;
+
+  float: right;
+}
+
+section > p {
+  clear: right;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  div {
+    width: 50%;
+  }
+
+  div > section {
+    width: 100%;
+  }
+
+  #last_item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  div {
+    width: 100%;
+  }
+}
