@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Module work</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+  </head >
   <body>
-    <h1>Our Menu</h1>  
-    <div>
-      <section>
-        <h1>Chicken</h1>
-        <p>
-          We’re all about chicken for dinner here at Delish.
-          Chicken breasts, thighs (our favorite cut), or even a whole bird all have a spot on our kitchen table.
-          Unfortunately, that can mean falling into a dinner rut much too easily for our liking.
-        </p>
-      </section>
-    </div>
-    
-    <div>
-      <section>
-        <h1>Beef</h1>
-        <p>
-          We’re all about chicken for dinner here at Delish.
-          Chicken breasts, thighs (our favorite cut), or even a whole bird all have a spot on our kitchen table.
-          Unfortunately, that can mean falling into a dinner rut much too easily for our liking.
-        </p>
-      </section>
-    </div> 
 
-    <div id="last_item">
-      <section>
-        <h1>sushi</h1>
-        <p>
-          We’re all about chicken for dinner here at Delish.
-          Chicken breasts, thighs (our favorite cut), or even a whole bird all have a spot on our kitchen table.
-          Unfortunately, that can mean falling into a dinner rut much too easily for our liking.
-        </p>
-      </section>
+    <header class="sticky-top">
+      <nav class="navbar">
+        <div class="brand float-start">
+          Food, LLC
+        </div>
+        <button class="navbar-toggler float-end d-sm-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuItems" aria-controls="menuItems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <menu id="menuItems" class="text-center collapse">
+        <li>Chicken <hr></li>
+        <li>Beef <hr></li>
+        <li>Sushi <hr></li>
+      </menu>
+    </header>
+
+    <h1 class="text-center">Our Menu</h1>  
+    <div class="container-fluid">
+      <div class="row">
+          
+        <div class="position-relative col-md-4 col-sm-6 col-xs-12">
+          <section>
+              <h1 class="text-center position-absolute top-0 end-0">Chicken</h1>
+              <hr>
+              <p>
+                We’re all about chicken for dinner here at Delish.
+                Chicken breasts, thighs (our favorite cut), or even a whole bird all have a spot on our kitchen table.
+                Unfortunately, that can mean falling into a dinner rut much too easily for our liking.
+              </p>
+          </section>
+        </div>
+
+        <div class="position-relative col-md-4 col-sm-6 col-xs-12">
+          <section>
+              <h1 class="text-center position-absolute top-0 end-0">Beef</h1>
+              <hr>
+              <p>
+                We’re all about chicken for dinner here at Delish.
+                Chicken breasts, thighs (our favorite cut), or even a whole bird all have a spot on our kitchen table.
+                Unfortunately, that can mean falling into a dinner rut much too easily for our liking.
+              </p>
+          </section>
+        </div>
+
+        <div class="position-relative col-md-4 col-sm-12 col-xs-12">
+          <section>
+              <h1 class="text-center position-absolute top-0 end-0">sushi</h1>
+              <hr>
+              <p>
+                We’re all about chicken for dinner here at Delish.
+                Chicken breasts, thighs (our favorite cut), or even a whole bird all have a spot on our kitchen table.
+                Unfortunately, that can mean falling into a dinner rut much too easily for our liking.
+              </p>
+          </section>
+        </div>
+      </div> <!-- end of row -->
     </div>
+    <footer>
+      
+    </footer>
   </body>
 </html>

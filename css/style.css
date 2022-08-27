@@ -1,57 +1,55 @@
-body > h1 {
-  text-align: center;
+nav {
+  background-color: gray;
 }
 
-div {
-  margin: 0px 0px 4px 0px;
-  padding: 0px 4px 0px 0px;
+menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #000;
+  background: white;
+}
 
-  box-sizing: border-box;
-  width: 33%;
+li > hr {
+  width: 90%;
+  margin: 0 auto 0;
+  opacity: 100%
+}
 
-  float: left;
+menu :last-child hr{
+  visibility: hidden;
 }
 
 section {
+  margin: 0px 0px 4px 0px;
   border: 1px solid #000;
+  border-collapse: collapse;
 
-  padding: 0px 0px 0px 6px;
+  padding: 0;
   box-sizing: border-box;
 
   background: gray;
+
+  position: relative;
 }
 
 section > h1 {
-  margin: -1px -1px 0px 0px;
   border: 1px solid #000;
+  margin: -1px -1px 0px 0px;
   width: 35%;
 
-  text-align: center;
   background-color:  pink;
+  box-sizing: border-box;
 
-  float: right;
+  font-size: 1.3em;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
 }
 
-section > p {
-  clear: right;
+section > hr {
+  visibility: hidden;
 }
 
-@media (min-width: 768px) and (max-width: 991px){
-  div {
-    width: 50%;
-  }
-
-  div > section {
-    width: 100%;
-  }
-
-  #last_item {
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  div {
-    width: 100%;
-  }
-}
